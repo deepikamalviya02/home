@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admin Dashboard</title>
+    <!-- Icons Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            display: flex;
+            min-height: 100vh;
+        }
+ .nav-links {
+            list-style: none;
+            flex-grow: 1;
+        }
+
+        .nav-section-label {
+            padding: 20px 25px 10px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+        }
+
+        .nav-links li a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 25px;
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            background-color: var(--sidebar-hover);
+            color: white;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .logout-btn {
+            margin: 20px;
+            padding: 12px;
+            background-color: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+       
+        .main-content {
+            margin-left: 260px;
+            width: calc(100% - 260px);
+            padding: 40px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            color: var(--text-main);
+        }
+
+        header p {
+            color: var(--text-muted);
+        }
+
+.actions-section h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .actions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .action-btn {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .action-btn:hover {
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+            background: #eff6ff;
+            transform: translateY(-3px);
+        }
+ </style>
+</head>
+<body>
+ <main class="main-content">
+        <header>
+            <h1>Admin Dashboard</h1>
+                    </header>
+
+<section class="actions-section">
+            <h2>Quick Tasks</h2>
+            <div class="actions-grid">
+                <a class="action-btn">Create Teacher</a>
+                <a class="action-btn">Create Class</a>
+                <a class="action-btn">Open Student Registration</a>
+                <a class="action-btn">Assign Teacher To Class</a>
+                <a class="action-btn">Assign Student To Class</a>
+                <a class="action-btn">View Teachers</a>
+                <a class="action-btn">View Students</a>
+                <a class="action-btn">Search Student</a>
+                <a class="action-btn">View Classes</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+
+
+
+
+
